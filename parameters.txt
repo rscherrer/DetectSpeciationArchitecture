@@ -33,4 +33,5 @@ tsave 10
 record 1 
 archsave 0 
 ntrials 100
+archload 1
 
