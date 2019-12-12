@@ -1,1 +1,14 @@
+Hyper parameters neural network:
+- Layers: Dense, Dropout (might need some extra)
+- Initializer: Glorot/Xavier (default)
+- Activation: Softmax (other activation in case of multiple layers?)
+- Optimizer: Adam
+- Loss: Categorical crossentropy
+- Metric: accuracy
 
+Sources:
+(add from desktop)
+
+Structure of neural network:
+- Initially 1 Dense layer
+- Test and expand with multiple Dense and Dropout layers
