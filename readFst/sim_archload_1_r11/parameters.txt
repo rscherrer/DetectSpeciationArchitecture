@@ -1,0 +1,37 @@
+rdynamics 1 
+trenewal 0.01
+capacity 100 
+replenish 1 
+hsymmetry 1 
+ecosel 1.4
+dispersal 0 
+birth 4 
+survival 0.8 
+sexsel 10 
+matingcost 0.01 
+maxfeed 0.0004 
+demesizes 100 0 
+nvertices 300 50 50 
+nedges 300 0 0 
+nchrom 3 
+mutation 0.0001 
+recombination 3 
+allfreq 0.2 
+scaleA 1 1 1 
+scaleD 0 0 0 
+scaleI 0 0 0 
+scaleE 0 0 0 
+skews 1 1 1 
+effectshape 2 
+effectscale 1 
+interactionshape 5 
+interactionscale 1 
+dominancevar 1 
+tburnin 1000 
+tend 3000 
+tsave 100 
+record 1 
+archsave 0 
+ntrials 100
+archload 1
+

@@ -1,1 +1,18 @@
+12/12/2019
+Made bash and python scripts to copy Fst data for a given timestep from sim* folders,
+and put them all together in a .dat file
+Currently in readFst folder (also has some sim folders for testing)
+run get_train_data.sh <destination file> <timestep>
+    - calls get_Fst_range.py, which finds the indices in the .dat file for the Fst data at the right timestep
+        - If the given timestep wasn't saved, will use the next lowest one (or first possible if timestep is too low) (this could use some tweaking - negative timestep could go to the HIGHEST time, and timesteps not divisible by tsave could go to NEAREST time, instead of next lowest)
+	- Uses the parameters.txt file, expected to be in the current directory
+        - Writes the start and end indices of the range to readPositions.txt so the bash script can use them. Must be a better way to do this? maybe need to do everything in python (look at os package, ask raph)
+    - reads the start and end positions from the txt file made by get_Fst_range.py
+    - for each sim* folder, calls copy_data.py, which copies genome_Fst.dat from start to end pos into given .dat file. appends to file instead of overwriting
+	- in this way you get Fst for the given timestep for each sim in one dat file
+readTrainData.py has some code to copy into the neural network, to read train data from two of the above .dat files (one simple, one complex set of sims), and make and array of labels as well. reshapes data array for neural network
 
+don't know why i wrote all this, its not even about neural networks
+KEY BITS TO WORK ON:
+    - PASSING START AND END POS FROM PYTHON TO BASH, BETTER WAY TO DO?
+    - i feel like all the files and some of the variables need better names
