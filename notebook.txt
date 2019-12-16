@@ -7,7 +7,12 @@ Hyper parameters neural network:
 - Metric: accuracy
 
 Sources:
-(add from desktop)
+Basis: https://machinelearningmastery.com/build-multi-layer-perceptron-neural-network-models-keras/
+Activation: softmax (https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/)
+Initializer: default(Glorot/Xavier) (https://stats.stackexchange.com/questions/373136/softmax-weights-initialization)
+Optimizer: ALRM is better (http://www.cs.toronto.edu/~mravox/p4.pdf) Adam (https://medium.com/octavian-ai/which-optimizer-and-learning-rate-should-i-use-for-deep-learning-5acb418f9b2)
+Loss function: categorical crossentropy (https://towardsdatascience.com/understanding-different-loss-functions-for-neural-networks-dd1ed0274718)
+Metrics: default(accuracy) no other supported
 
 Structure of neural network:
 - Initially 1 Dense layer
