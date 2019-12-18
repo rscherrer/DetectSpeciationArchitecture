@@ -3,8 +3,8 @@ import numpy as np
 # haven't tested any of this!! test on some smaller amounts before using maybe!
 # for labels, assumes first half of sims are simple, second half are complex
 
-filenameSimple = "traindata_1_simple.dat"
-filenameComplex = "traindata_1_complex.dat"
+filenameSimple = "train_data_additive_1.dat"
+filenameComplex = "train_data_additive_1.dat"
 ngenes = 400
 nsims = 400
 
