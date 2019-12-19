@@ -11,15 +11,15 @@ sexsel 10
 matingcost 0.01 
 maxfeed 0.0004 
 demesizes 100 0 
-nvertices 300 50 50 
-nedges 50 0 0 
+nvertices 300 50 50
+nedges 300 0 0 
 nchrom 3 
 mutation 0.0001 
 recombination 3 
 allfreq 0.2 
-scaleA 0 1 1 
+scaleA 1 1 1 
 scaleD 0 0 0 
-scaleI 1 0 0 
+scaleI 0 0 0 
 scaleE 0 0 0 
 skews 1 1 1 
 effectshape 2 
@@ -29,8 +29,8 @@ interactionscale 1
 dominancevar 1 
 tburnin 1000 
 tend 3000 
-tsave 10 
+tsave 100
 record 1 
 archsave 0 
 ntrials 100
-
+archload 1
