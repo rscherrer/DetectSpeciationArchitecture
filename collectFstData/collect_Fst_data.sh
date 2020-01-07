@@ -38,7 +38,7 @@ if [ "$1" != "" ]; then
     # appends each bit of data into the file
     for folder in $(ls -d sim*)
     do
-        if [ -f "genome_Fst.dat" ]; then
+        if [ -f $folder/genome_Fst.dat ]; then
             python3 copy_data.py $1 $folder/genome_Fst.dat $STARTPOS $ENDPOS
         fi
     done
